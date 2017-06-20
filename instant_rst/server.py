@@ -1,7 +1,10 @@
 from flask import Flask, render_template, request, url_for, jsonify, send_from_directory
 from flask.ext.socketio import SocketIO, emit
 
-import os, sys
+import os
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 from instant_rst.rst import html_body
 
